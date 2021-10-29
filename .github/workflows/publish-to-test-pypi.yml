@@ -5,7 +5,7 @@ on: push
 jobs:
   build-n-publish:
     name: Build and publish data-scientist-util distribution  for TestPyPI
-    runs-on: ubuntu-18.04a
+    runs-on: ubuntu-18.04
 
     steps:
      - uses: actions/checkout@master

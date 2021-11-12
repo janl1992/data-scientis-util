@@ -1,8 +1,8 @@
 import pandas as pd
-from datetime import datetime
 import csv
 import joblib
 from datetime import datetime
+import json
 
 def write_output(predicted_outcome, input_dir='../input', submission_dir='../submission'):
     t = pd.read_csv('{}/train.csv'.format(input_dir))
@@ -18,12 +18,21 @@ def write_output(predicted_outcome, input_dir='../input', submission_dir='../sub
     return filename
 
 
-def read_pre_processed_data(pre_processed_dir='../pre_processed_input'):
-    X_train = pd.read_csv('{}/train.csv'.format(pre_processed_dir))
-    Y_train = pd.read_csv('{}/train_target.csv'.format(pre_processed_dir))
-    X_valid = pd.read_csv('{}/validation.csv'.format(pre_processed_dir))
-    Y_valid = pd.read_csv('{}/validation_target.csv'.format(pre_processed_dir))
-    X_test = pd.read_csv('{}/test.csv'.format(pre_processed_dir))
+def dump_data_format_dictionary(X_train, path='../pre_processed_input', data_type_dict='data_format.json'):
+    target_dict = {key: value.name for key, value in zip(X_train.columns, X_train.dtypes)}
+    with open('{}/{}'.format(path, data_type_dict), 'w') as data_dict:
+        json.dump(target_dict, data_dict)
+
+
+def read_pre_processed_data(path='../pre_processed_input', data_type_dict='data_format.json'):
+    with open('{}/{}'.format(path, data_type_dict)) as f:
+        type_dict = json.load(f)
+
+    X_train = pd.read_csv('{}/train.csv'.format(path), dtype=type_dict)
+    Y_train = pd.read_csv('{}/train_target.csv'.format(path), dtype=type_dict)
+    X_valid = pd.read_csv('{}/validation.csv'.format(path), dtype=type_dict)
+    Y_valid = pd.read_csv('{}/validation_target.csv'.format(path), dtype=type_dict)
+    X_test = pd.read_csv('{}/test.csv'.format(path), dtype=type_dict)
 
     return X_train, Y_train, X_valid, Y_valid, X_test
 

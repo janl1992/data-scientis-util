@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/data-scientis-util/frontend/docs/build/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/data-scientis-util/frontend/docs/build/static/js/main.f4a4fc7b.chunk.js",
-    "main.js.map": "/data-scientis-util/frontend/docs/build/static/js/main.f4a4fc7b.chunk.js.map",
-    "runtime-main.js": "/data-scientis-util/frontend/docs/build/static/js/runtime-main.f170d993.js",
-    "runtime-main.js.map": "/data-scientis-util/frontend/docs/build/static/js/runtime-main.f170d993.js.map",
-    "static/js/2.916ac65b.chunk.js": "/data-scientis-util/frontend/docs/build/static/js/2.916ac65b.chunk.js",
-    "static/js/2.916ac65b.chunk.js.map": "/data-scientis-util/frontend/docs/build/static/js/2.916ac65b.chunk.js.map",
-    "static/js/3.3b4a6da8.chunk.js": "/data-scientis-util/frontend/docs/build/static/js/3.3b4a6da8.chunk.js",
-    "static/js/3.3b4a6da8.chunk.js.map": "/data-scientis-util/frontend/docs/build/static/js/3.3b4a6da8.chunk.js.map",
-    "index.html": "/data-scientis-util/frontend/docs/build/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/data-scientis-util/frontend/docs/build/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.916ac65b.chunk.js.LICENSE.txt": "/data-scientis-util/frontend/docs/build/static/js/2.916ac65b.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/data-scientis-util/frontend/docs/build/static/media/logo.6ce24c58.svg"
+    "main.css": "/data-scientis-util/frontend/docs/public/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/data-scientis-util/frontend/docs/public/static/js/main.f4a4fc7b.chunk.js",
+    "main.js.map": "/data-scientis-util/frontend/docs/public/static/js/main.f4a4fc7b.chunk.js.map",
+    "runtime-main.js": "/data-scientis-util/frontend/docs/public/static/js/runtime-main.19669499.js",
+    "runtime-main.js.map": "/data-scientis-util/frontend/docs/public/static/js/runtime-main.19669499.js.map",
+    "static/js/2.916ac65b.chunk.js": "/data-scientis-util/frontend/docs/public/static/js/2.916ac65b.chunk.js",
+    "static/js/2.916ac65b.chunk.js.map": "/data-scientis-util/frontend/docs/public/static/js/2.916ac65b.chunk.js.map",
+    "static/js/3.3b4a6da8.chunk.js": "/data-scientis-util/frontend/docs/public/static/js/3.3b4a6da8.chunk.js",
+    "static/js/3.3b4a6da8.chunk.js.map": "/data-scientis-util/frontend/docs/public/static/js/3.3b4a6da8.chunk.js.map",
+    "index.html": "/data-scientis-util/frontend/docs/public/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/data-scientis-util/frontend/docs/public/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.916ac65b.chunk.js.LICENSE.txt": "/data-scientis-util/frontend/docs/public/static/js/2.916ac65b.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/data-scientis-util/frontend/docs/public/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f170d993.js",
+    "static/js/runtime-main.19669499.js",
     "static/js/2.916ac65b.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.f4a4fc7b.chunk.js"
